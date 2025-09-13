@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MentorConnect - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-signup-container">
+    <div class="left-panel">
+      <h1>MentorConnect</h1>
+      <p>Connect with mentors, share stories, and grow together.</p>
+    </div>
+
+    <div class="right-panel">
+      <div class="form-container">
+        <form id="loginForm">
+          <h2>Login</h2>
+          <input type="email" placeholder="Email" class="input-field" required>
+          <input type="password" placeholder="Password" class="input-field" required>
+          <button type="submit" class="btn">Login</button>
+          <p class="toggle-text">Don't have an account? <span id="showSignup">Sign Up</span></p>
+        </form>
+
+        <form id="signupForm" class="hidden">
+          <h2>Sign Up</h2>
+          <input type="text" placeholder="Full Name" class="input-field" required>
+          <input type="email" placeholder="Email" class="input-field" required>
+          <input type="password" placeholder="Password" class="input-field" required>
+          <button type="submit" class="btn">Sign Up</button>
+          <p class="toggle-text">Already have an account? <span id="showLogin">Login</span></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
