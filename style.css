@@ -1,3 +1,298 @@
-/* Reset & Base */
-* {margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif;}
-body {background
+/* ================== Base Styles ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* ================== Navbar ================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin-left: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+/* ================== Hero Section ================== */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero .card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.hero .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ================== Login / Signup ================== */
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.left-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.left-panel h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.left-panel p {
+  font-size: 1.2rem;
+  max-width: 400px;
+}
+
+.left-panel .illustration {
+  width: 300px;
+  margin-top: 2rem;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+form h2 {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+form p {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+form span {
+  color: #ffeb3b;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ================== Directory / Card Styles ================== */
+.directory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 220px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* ================== Profile Pages ================== */
+.profile {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ================== Story Section ================== */
+.fab-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+  animation: float 2s ease-in-out infinite;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+@keyframes float {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .left-panel, .right-panel {
+    flex: unset;
+    width: 100%;
+    padding: 2rem;
+  }
+  .hero .cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .directory {
+    flex-direction: column;
+    align-items: center;
+  }
+}
